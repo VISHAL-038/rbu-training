@@ -31,7 +31,7 @@ a[href$=".jpg"] {
 a[href*="/"] {
     color: red;
 }
-img[src^="../"] {
+img[src^="./"] {
     border: 10px solid gray;
 } 
 /* e.) Pseudo Selectors */
@@ -51,3 +51,30 @@ li:first-child {
 .ordered-list-item:nth-child(3) {
     color: yellow;
 }
+
+/* units of measurements */
+/* 1. absolute unit : a value that can not be change. (like km , m , liter , kg)that units cannot be change (pixels in html) 
+2. relative unit  (em) is most common used. increse size in terms of multiply*/
+/* RESPONSIVE DESIGN :- best source is relative unit . to adjust the data in webpage as per requirement.*/
+
+p{
+    /* font-size: 18px; */
+    /* font-size: 1.1em; */
+    font-size: 0.5cm;
+}
+ /* converting a div into a box */
+
+ img{
+    /* width: 500px;
+    height: 720ox;   */
+    /* in genral height is absolute and width is realative */
+    width: 50%;
+    height: 250;
+ }
+
+
+/* colors:- 1. hex code 2. name 3.RGB color 4. */
+/* gradints:- 1.linear gradinet 2. radial gradient */
+
+
+
