@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
 /* 1. Selectors */
 
 body{
@@ -7,6 +8,7 @@ body{
 /* a.) Element Selector - Selects element based on the name */
 h1 {
     color: blue;
+    text-align: center;
 }
 /* b.) id Selector - Selects the element based on the id. */
 #heading-one:hover {
@@ -62,8 +64,8 @@ li:first-child {
 
 p{
     /* font-size: 18px; */
-    /* font-size: 1.1em; */
-    font-size: 0.5cm;
+    font-size: 1.1em; 
+    /* font-size: 0.5cm; */
 }
  /* converting a div into a box */
 
@@ -139,6 +141,16 @@ form {
     1. Named Colors     2. HEX Code     3. RBG() -> rgb(red, green, blue)   4. RGBA() -> rgb(red, green, blue, absolute) -> abs [0-1]; 
     */
 }
+
+
+#container-four {
+    width: 400px;
+    height: 400px;
+
+    background: radial-gradient(circle, black 10%, red 20%, blue 25%, green 30%, yellow 80%, white 90%);
+}
+
+/* Fonts and Font-Family */
 /* colors:- 1. hex code 2. name 3.RGB color 4. */
 /* gradints:- 1.linear gradinet 2. radial gradient */
 
