@@ -72,6 +72,39 @@ p{
     height: 250;
  }
 
+ 
+ /* BOX MODEL */
+#form-email, #form-name, #form-pwd {
+    width: 100%;
+}
+
+.form-item {
+    margin: 8px;
+}
+
+form {
+    /* border: widthOfBorder style color; */
+    /* style :- 1. solid, 2. dotted, 3. dashed, 4. double */
+    border: 3px solid gray;
+
+    /* 
+    padding: a-px;
+    padding: a-px b-px; a -> top-bottom | b -> left-right
+    padding: a-px b-px c-px d-px; a -> top | b -> right | c -> bottom | d -> left 
+    */
+    padding: 10px;
+    padding: 10px 5px;
+    padding-top: 5px; padding-right: 10px; padding-bottom: 15px; padding-left: 20px;
+    padding: 5px 10px 15px 20px;
+
+    margin: 10px;
+    margin: 10px 5px;
+    margin: 5px 10px 15px 20px;
+
+    /* NOTE:- padding & margin are both parent properties -> they also have sub-properties associated w them. */
+    /* padding-left:; padding-right:; padding-top:; padding-bottom:; margin-top:; margin-bottom:; margin-left:; margin-right:; */
+}
+
 
 /* colors:- 1. hex code 2. name 3.RGB color 4. */
 /* gradints:- 1.linear gradinet 2. radial gradient */
