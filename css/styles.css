@@ -3,12 +3,18 @@
 
 body{
     background: linear-gradient(to bottom, rgba(162,193,242,1) , rgba(162,193,242,0));
+    font-family: serif;
+    /* font-family: sans-serif; */
 }
 /* selector { cssProperty: cssValue; } */
 /* a.) Element Selector - Selects element based on the name */
 h1 {
     color: blue;
     text-align: center;
+    font-size: 50px;
+    text-align: center;
+    text-shadow: 10px 10px 10px black , -10px -10px 10px red;  
+    /* vertical horizontal opake(shadow clearity)/blur radius color */
 }
 /* b.) id Selector - Selects the element based on the id. */
 #heading-one:hover {
@@ -56,6 +62,7 @@ li:first-child {
 .ordered-list-item:nth-child(3) {
     color: yellow;
 }
+
 
 /* units of measurements */
 /* 1. absolute unit : a value that can not be change. (like km , m , liter , kg)that units cannot be change (pixels in html) 
@@ -113,8 +120,10 @@ form {
 
 /* background: */
 #container-two {
-    width: 65%;
-    height: 500px;
+    /* width: 65%;
+    height: 500px; */
+    width: 650px;
+    height: 400px;
     /* NOTE:- background is a parent property */
     /* background: red; */
     background: url('https://cdn.wallpapersafari.com/13/84/wlZ31L.jpg');
@@ -122,6 +131,7 @@ form {
     background-color: green;
     /* background-size: 100%; background-size: auto; background-size: cover; */
     background-size: cover;
+    /* background-image: url("./assestes/pexels-alex-fu-1302436.jpg"); */
 }
 
 /* Gradients - 1. Linear Gradient, 2. Radial Gradients */
@@ -150,9 +160,34 @@ form {
     background: radial-gradient(circle, black 10%, red 20%, blue 25%, green 30%, yellow 80%, white 90%);
 }
 
+a{
+    text-decoration:line-through;
+}
+
 /* Fonts and Font-Family */
 /* colors:- 1. hex code 2. name 3.RGB color 4. */
 /* gradints:- 1.linear gradinet 2. radial gradient */
+
+
+/* flex box :allign multiple itmes in block */
+#container{
+    display: flex;
+    /* flex-direction:row; row-reverse column column-reverse */
+    flex-wrap:wrap;
+    /* justify-content: center; flex-end, flex-start only work when box is flex */
+    justify-content: space-around;
+}
+.container-item{
+    width: 100px;
+    height: 100px;
+    font-size: 6em;
+    text-align: center;
+    background-color: green;
+    color: white;
+    margin: 15px;
+    /* display: block; */
+}
+ 
 
 
 
