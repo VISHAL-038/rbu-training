@@ -36,7 +36,7 @@
         info ->light blue
         warming -> yellowish -->
         <p class="text-primary">Contextual class (primary)</p>
-        <p class="text-success">Contextual class (success)</p>
+        <p text-success">Contextual class (success)</p>
         <p class="text-danger">Contextual class (danger)</p>
         <p class="text-info">Contextual class (muted)</p>
         <p class="text-muted">Contextual class (info)</p>
@@ -50,8 +50,163 @@
         <!-- <p class="bg-muted">Contextual class (info)</p>  not possible-->
         <p class="bg-warning">Contextual class(warning)</p>
 
+        <hr/>
+
+        <h3>button / sumbit and anchor tags</h3>
+        <button class="btn btn-primary">Button</button>
+        <input class="btn btn-success" type="submit" value="SUBMIT">
+        <a class="btn btn-danger" href="#">ANCHOR</a>
+
+        <hr/>
+
+        <h5>BUTTON SIZE</h5>
+        <button class="btn btn-primary">Button 1</button>
+        <button class="btn btn-primary btn-sm">Button 2</button>
+        <button class="btn btn-primary btn-lg">Button 3</button>
+        <button class="btn btn-primary btn-xs">Button 4</button>
+        
+        <hr/>
+
+        <h3>tables</h3>
+        <table class="table table-bordered table-condensed table-hover">
+                <tr>
+                    <th>emp_id</th>
+                    <th>name</th>
+                    <th>email</th>
+                    <th>Desgination</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>emp 1</td>
+                    <td>mail.com</td>
+                    <td>desg 1</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>emp 2</td>
+                    <td>mail2.com</td>
+                    <td>desg 2</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>emp 3</td>
+                    <td>mail3.com</td>
+                    <td>desg 3</td>
+                </tr>
+        </table>
+
+        <hr/>
+
+        <h3>forms</h3>
+        <div class="container">
+            <form style="border: 2px double black; padding: 20px;">
+                <!-- <span>Your Name : </span><input type=""  /> -->
+                <div class="form-group">
+                    <input class="form-control" type="text" placeholder="enter your name..." /> 
+                </div>
+                <!-- Email :- username@hostname.com -->
+                <div class="form-group">
+                    <input class="form-control" type="email" placeholder="enter your email..." />
+                </div>
+                 <div class="form-group">
+                    <input class="form-control" type="password" placeholder="enter your password..." /> 
+                 </div>
+                <div class="form-group">
+                    <input class="form-control" type="date" /> 
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="range" />
+                </div> 
+                <label>Enter you gender - </label>
+                <div class="form-group">
+                    <select class="form-control">
+                        <option>Male</option>
+                        <option>Female</option>
+                        <option>Others</option>
+                    </select> 
+                </div>
+                <div class="form-group">
+                    <label>Upload you CV - </label>
+                    <input class="form-control" type="file" /> 
+                </div>
+                <div class="form-group">
+                    <input class="btn btn-success btn-lg" type="submit" value="Sign Up" />
+                </div>
+             </form>
+        </div>
+
+        <hr>
+
+        <div class="container-fluid"><h3>navigation bar</h3></div>
+        <div class="container">
+            <ul class="list-unstyled ">
+                <li>itme 1</li>
+                <li>itme 2</li>
+                <li>itme 3</li>
+                <li>itme 4</li>
+                <li>itme 5</li>
+            </ul>
+
+            <ol style="display:flex; justify-content: space-between;" class="list-unstyled list-inline" >
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Project</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About US</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ol>
+        </div>
+        
+        <hr>
+
+        <div class="container-fulid"><h3>Panels</h3></div>
+        <div class="container"> 
+            <div class="panel panel-primary">
+                <div class="panel-heading ">
+                     <h4>Panel Heading</h4>
+                </div>
+                <div class="panel-body">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam, distinctio. Nulla, repellat ipsum facilis error labore, quibusdam maxime, quia corporis reiciendis dolore suscipit distinctio tenetur illo quisquam a et quidem.</p>
+                </div>
+             </div>
+        </div>
+        
+
+        <hr>
+        <div class="container-fluid">
+            <h3>GRIDS</h3>
+        </div>
+        <div class="container">
+            <!-- row -->
+            <div class="row">
+                <!-- one row can have 12 columns -->
+                <!-- total no of items/total no of rows  12/4=3-->
+                <div class="col-lg-4">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam, distinctio. Nulla, repellat ipsum facilis error labore, quibusdam maxime, quia corporis reiciendis dolore suscipit distinctio tenetur illo quisquam a et quidem.</p>
+                </div>
+                <div class="col-lg-4">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam, distinctio. Nulla, repellat ipsum facilis error labore, quibusdam maxime, quia corporis reiciendis dolore suscipit distinctio tenetur illo quisquam a et quidem.</p>
+                </div>
+                <div class="col-lg-4">
+                    <div class="container"> 
+                        <div class="panel panel-primary">
+                            <div class="panel-heading ">
+                                 <h4>Panel Heading</h4>
+                            </div>
+                            <div class="panel-body">
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam, distinctio. Nulla, repellat ipsum facilis error labore, quibusdam maxime, quia corporis reiciendis dolore suscipit distinctio tenetur illo quisquam a et quidem.</p>
+                            </div>
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
 
     </div>
+    <hr/>
+    <div style="height: 500px;"></div>
     
 </body>
 </html>
