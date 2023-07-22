@@ -131,6 +131,10 @@ myarr2.push(90)
 console.log(myarr2);
 console.log(myarr1)
 
+myarr1.pop()
+console.log(myarr1)
+
+
 let deletedElement = myarr1.shift()
 console.log(myarr1)
 
@@ -140,8 +144,115 @@ console.log(myarr1)
 
 let num1 = [10, 20, 30, 40]
 let num2 = [100, 200, 300, 400, 500]
-let combinedArray = num2.concat(num1);
-console.log(combinedArray)                      // 
+let combinedArray = num2.concat(num1);  //combine arrays
+console.log(combinedArray)                      
+let combinedArray2 = num1.concat(num2);
+console.log(combinedArray2);
 
 let dummyArray = [10, "String", true, null, undefined, []]
 console.log(dummyArray)
+console.log(dummyArray.length);  //find length of array
+
+// twoDArray=[ [],[],[] ]
+let twoDArray = [[10,20,30],[40,50,60],[70,80,90]]   //3X3 matrix
+console.log(twoDArray);
+console.log(twoDArray[1][1]);
+console.log(twoDArray[1][2]);
+
+//non primitive data type = JS OBJECTS {}this denote object
+// 2 ways to make = 
+// let myObj = {key 1 : value1 , key 2 : value 2}
+// console.log(myObj);
+// console.log(typeof(myObj));
+
+let myObj ={
+    name: "user one",
+    email:"gr@gmil.com",
+    password: "dsfdknv",
+    empNo: 21,
+    boolena:true,
+    hobbies:["drawing" , "photography"],
+    address: {
+        street: "vista",
+        city: "kharar",
+        state: "punjab",
+        pincode :[140301,160047]
+    }
+}
+console.log(myObj);
+console.log(`hi this is uer ${myObj.name}, my email is ${myObj.email},  my password is ${myObj.password} , my employe number is ${myObj.empNo} , my hobnies are ${myObj.address.city} and my address is ${myObj.address}. the all things are written above is ${myObj.boolena} `);  // access specific this in JS object
+// we store object in a key value pair in this type of data type.
+console.log(myObj.hobbies[0]); // accesing array inside object
+console.log(myObj.address.city);
+console.log(myObj.address.pincode);
+
+//camel casing -> two letters firest letter word lower case and second letter uppercase
+
+let myObj1= new Object
+myObj1.name = "vdd"
+myObj1.email="fDS@greg"
+console.log(myObj1);
+
+// array of objects :- [{}, {}, {}]
+const users = [
+    {
+        name: "user one",
+        email:"user1@gmil.com",
+        password: "dsfdknv",
+        empNo: 21,
+        boolena:true,
+        hobbies:["drawing" , "photography"],
+        address: {
+            street: "vista",
+            city: "kharar",
+            state: "punjab",
+            pincode :[140301,160047]
+        } 
+    } , 
+
+    {
+        name: "user two",
+        email:"user2@gmil.com",
+        password: "dsfdknv",
+        empNo: 21,
+        boolena:true,
+        hobbies:["drawing" , "photography"],
+        address: {
+            street: "vista",
+            city: "kharar",
+            state: "punjab",
+            pincode :[140301,160047]
+        }
+    } ,
+
+    {  
+        name: "user three",
+        email:"user3@gmil.com",
+        password: "dsfdknv",
+        empNo: 21,
+        boolena:true,
+        hobbies:["drawing" , "photography"],
+        address: {
+            street: "vista",
+            city: "kharar",
+            state: "punjab",
+            pincode :[140301,160047]
+        }
+    }
+]
+console.log(users)
+console.log(users[0].password)
+console.log(users[0].address.pincode[1]);
+
+//4 . stringified array of object (JSON code) (looks like array of object but keys and value is of string type)
+//JSON :- java script object notation 
+// JS  -> interface -> json -> function
+// 1. stringify  convert array of object to json
+console.log("json")
+const myJSONresponse = JSON.stringify(users);
+console.log(myJSONresponse)
+
+// json to array of objet : parse()
+console.log("array of object")
+const convertArrayOFObject=JSON.parse(myJSONresponse)
+console.log(convertArrayOFObject)
