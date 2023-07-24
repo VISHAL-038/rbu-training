@@ -126,8 +126,8 @@ let myarr1=[100,200,300,400,500]
 //console.log(myarr2);
 //myarr2.push(54);
 //console.log(myarr)   //100 200 300 400 500 54
-let myarr2=[...myarr1];
-myarr2.push(90)
+let myarr2=[...myarr1];   //array spread operator
+myarr2.push(90)   //ads the element at the end
 console.log(myarr2);
 console.log(myarr1)
 
@@ -135,10 +135,10 @@ myarr1.pop()
 console.log(myarr1)
 
 
-let deletedElement = myarr1.shift()
+let deletedElement = myarr1.shift()   //remove the element from starting
 console.log(myarr1)
 
-let newLength = myarr1.unshift(50);
+let newLength = myarr1.unshift(50);   // add the element at the starting
 console.log(newLength)                          // 5
 console.log(myarr1)
 
