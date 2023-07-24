@@ -248,7 +248,7 @@ console.log(users[0].address.pincode[1]);
 //JSON :- java script object notation 
 // JS  -> interface -> json -> function
 // 1. stringify  convert array of object to json
-console.log("json")
+console.log("JSON")
 const myJSONresponse = JSON.stringify(users);
 console.log(myJSONresponse)
 
@@ -256,3 +256,4 @@ console.log(myJSONresponse)
 console.log("array of object")
 const convertArrayOFObject=JSON.parse(myJSONresponse)
 console.log(convertArrayOFObject)
+
