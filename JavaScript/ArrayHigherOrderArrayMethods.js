@@ -17,8 +17,8 @@ const ages = [65, 42, 16, 10, 5, 43, 74, 45, 55, 76, 81, 11, 14, 12, 9];
 // arrayName.methodName
 
 // 1. forEach() -> Performs the specified action for each element in an array.
-// employees.forEach( (iteratingValue, index) => { console.log(iteratingValue) } )
-// ages.forEach( (age) => {console.log(age)} )
+employees.forEach( (iteratingValue, index) => { console.log(iteratingValue) } )
+ages.forEach( (age) => {console.log(age)} )
 // ages.forEach( (age, index, array) => console.log(index, age, array) )
 // ages.forEach( age => console.log(age - 5) )
 
@@ -41,6 +41,6 @@ console.log(ages)
 ages.sort( (a, b) => b - a )
 console.log(ages)
 
-// 5. reduce()
+// 5. reduce() ->Calls the specified callback function for all the elements in an array. The return value of the callback function is the accumulated result, and is provided as an argument in the next call to the callback function
 const sum = demoArr.reduce( (number, initialSum) => {return number * initialSum}, 1 )
-console.log(sum)
+console.log(sum);
