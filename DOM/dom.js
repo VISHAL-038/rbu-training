@@ -41,7 +41,7 @@
 //console.log( document.querySelectorAll('.list-group-item') )
 
 //DOM MANIPULATION METHODS :- 
-const heading = document.querySelectorAll('#header-title')
+// const heading = document.querySelectorAll('#header-title')
 
 
 // 1. textContent -> text in b/w of the <> and </> of the elt
@@ -54,20 +54,20 @@ const heading = document.querySelectorAll('#header-title')
 // textContent changes the text b/w <> & </> while innerHTML adds a child to the given element
 
 // CSS with JavaScript (.style)
-const secondHeading = document.querySelector('#second-heading')
+// const secondHeading = document.querySelector('#second-heading')
 
 // JS Function - setTimeOut()
 // Syntax -> setTimeOut( callfn, timeoutDelay (in ms) )
-setTimeout( () => {
-    secondHeading.style.backgroundColor = 'black'
-    secondHeading.style.color = 'white'
-    secondHeading.style.padding = '10px'
-    secondHeading.style.textAlign = 'center'
-}, 3000)
+// setTimeout( () => {
+//     secondHeading.style.backgroundColor = 'black'
+//     secondHeading.style.color = 'white'
+//     secondHeading.style.padding = '10px'
+//     secondHeading.style.textAlign = 'center'
+// }, 3000)
 
-setTimeout(() => {
-    heading.innerHTML = "<h2>Welocme to DOM</h2>"
-}, 5000)
+// setTimeout(() => {
+//     heading.innerHTML = "<h2>Welocme to DOM</h2>"
+// }, 5000)
 
 // document.querySelector("#btn").textContent='press me'
 //const myBtn = document.querySelector('#btn')
@@ -106,18 +106,139 @@ setTimeout(() => {
 // element.addEventListner( eventName, () => {} )
 // element.addEventListner( eventName, fuctionName )
 
-const myBtn = document.getElementById('btn')
-myBtn.addEventListener( 'dblclick', () => {
-    console.log('My Button was Clicked!')
-} )
+//  document.getElementById('btn').addEventListener( 'click', () => {
+//      console.log('My Button was Clicked!')
+//  } )
 
-document.getElementById('item-one').addEventListener('click', () => {
-    console.log('Item -1 was clicked!')
-})
+// document.getElementById('btn').addEventListener( 'dblclick', () => {
+//     console.log('My Button was 2 Clicked!')
+// } )
 
-// SUBMIT BUTTON
-document.getElementById('submitBtn').addEventListener('click', () => {
-    console.log('Submit Button was clicked!')
-})
+// document.getElementById('item-one').addEventListener('click', () => {
+//     console.log('Item -1 was clicked!')
+// })
+
+// // SUBMIT BUTTON
+// // document.getElementById('submitBtn').addEventListener('click', () => {
+// //     console.log('Submit Button was clicked!')
+// // })
+// document.getElementById('submitBtn').addEventListener('click',(e)=>{
+//     e.preventDefault()
+//     console.log("sumbit button was clicked!")
+// })
+
+//document.getElementById('text-input').addEventListener('mouseenter', () => { console.log('Cursror entered the element') }) //go on elemet
+
+//document.getElementById('text-input').addEventListener('mouseleave', () => { console.log('Cursror left the element') }) //go out from element
+
+//document.getElementById('text-input').addEventListener('focus', () => { console.log('Element was focused') }) //select the element
+
 
 // Keyboard Events
+
+//copy
+//document.getElementById('text-input').addEventListener('copy',()=> { console.log("data was copied")})
+
+//cut
+//document.getElementById('text-input').addEventListener('cut',()=> { console.log("data was cut")})
+
+//paste
+//document.getElementById('text-input').addEventListener('paste',()=> { console.log("data was pasted")})
+
+//keydown
+//document.getElementById('text-input').addEventListener('keydown',()=> { console.log("key is down")})
+
+//keyup
+//document.getElementById('text-input').addEventListener('keyup',()=> { console.log("key is up")})
+
+//keypress
+//document.getElementById('text-input').addEventListener('keypress',()=> { console.log("key is press")})
+
+// document.getElementById('text-input').addEventListener('keypress',(e)=> { console.log(e.target.value);})
+
+//alternative
+// document.getElementById('sumbitBtn').addEventListener('click', (e)=>{
+// e.preventDefault()
+// console.log(document.getElementById('text-input').value )
+// });
+
+// document.getElementById('submitBtn').addEventListener('click', (e) => {
+//     e.preventDefault()
+//     console.log( document.getElementById('text-input').value )
+// })
+
+// FUN ACTIVITY
+// document.querySelector('#container-box').addEventListener('mouseenter', (e) => {
+//     console.log(e);
+//     document.querySelector('#container-box').style.backgroundColor = `rgb(0, ${e.offsetX}, ${e.offsetY})`
+// })
+// document.querySelector('#container-box').addEventListener('mouseleave', (e) => {
+//     document.querySelector('#container-box').style.backgroundColor = `rgb(100, ${e.offsetX}, ${e.offsetY})`   
+// })
+
+
+//DOM RELATIONS AND DOM TRAVERSAIS
+
+//parent9
+// console.log(document.getElementById('items').parentElement)
+
+// //children
+// console.log(document.getElementById('items').children);
+// const items = document.getElementById('items').children
+// for(let i=0;i<=items.length;i++){
+//     if(i%2==0)
+//     {
+//         items[i].style.backgroundColor = "#f4f4f4"
+//     }
+// }
+
+// //first-child
+// console.log(document.getElementById('items').firstChild);
+// //what is text? thorugh identiation (blank text is there that's why it is giving that if you we want to access then we have to remove the space)
+// // why it is not giving correct ans and how to find that?
+
+// // alternative of firstchild is first element child
+// console.log(document.getElementById('items').firstElementChild);
+
+// //last-child
+// console.log(document.getElementById('items').lastChild);
+// //lastElementChilds
+// console.log(document.getElementById('items').lastElementChild);
+
+// //siblings-> previous sibling and next sibling
+// console.log(document.getElementById('head').previousSibling);
+// console.log(document.getElementById('head').previousElementSibling);
+// console.log(document.getElementById('head').nextSibling);
+// console.log(document.getElementById('head').nextElementSibling);
+
+// console.log(document.getElementById('second-heading').previousElementSibling);
+// console.log(document.getElementById('second-heading').previousSibling);
+
+// console.log(document.getElementsByName('script').nextElementSibling);
+
+// console.log(document.getElementById('head').parentElement.parentElement.parentElement);
+
+// Creating HTML using JS
+// const myDiv = document.createElement('div')
+// myDiv.textContent = 'Demo Text'
+// myDiv.setAttribute('id', 'my-div')
+// myDiv.setAttribute('class', 'my-div-class')
+
+// // ADding element to the HTML - appendChild()
+// document.getElementById('dummy-div').appendChild(myDiv)
+
+// console.log(myDiv)
+
+//item listener application
+//value will not come in run time . it will initiate.
+document.getElementById('submitBtn').addEventListener('click', (e)=>{
+    e.preventDefault()
+    const text = document.getElementById('text-input').value
+    const newLi = document.createElement('li')
+    newLi.setAttribute('class','list-group-item')
+    newLi.textContent = text;
+    document.getElementById('text-input').value = ''
+    document.getElementById('items').appendChild(newLi)
+    
+
+})
