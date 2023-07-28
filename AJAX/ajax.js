@@ -46,7 +46,7 @@ xhr.onreadystatechange = () =>     //it is a callback wait for server response
             for(let i=0; i < res.length; i++) {
                 output += `
                     <div>
-                        <img src="${res[i].avatar_url}" /> <br />
+                        <img src="${res[i].avatar_url}" /> <br/> <br/>
                         <p class="lead">${res[i].login}</p>
                     </div>
                 `
