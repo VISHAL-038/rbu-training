@@ -23,8 +23,37 @@ xhr.onreadystatechange = () =>     //it is a callback wait for server response
         {
             //i will get the response from the server => responseText
             const jsonRes=xhr.responseText;
+            //console.log(jsonRes)
             const res = JSON.parse(jsonRes);
-            console.log(res)
-        }
+
+            //accesing the data individually
+            // const userImg = document.createElement('img')
+            // userImg.setAttribute('src',res[0].avatar_url)
+            // const userName = document.createElement('h4')
+            // userName.textContent = res[0].login;
+            // console.log(userName)
+            // console.log(userImg);
+            //end of accessing data
+
+            console.log(res);
+
+            //accesing data in different way
+            
+            // avtar url and login is required
+            
+            let output = ''
+            // p1 -> res[0].login | p2 -> res[0].avatar_url
+            for(let i=0; i < res.length; i++) {
+                output += `
+                    <div>
+                        <img src="${res[i].avatar_url}" /> <br />
+                        <p class="lead">${res[i].login}</p>
+                    </div>
+                `
+            }
+            console.log(output)
+            document.getElementById('myDiv').innerHTML = output
+        
     }
-xhr.send()  //when the state is 4 then it will send request 
+}
+xhr.send()  //when the state is 4 then it will send request
